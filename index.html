@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<style>
+a {
+  font-family: Helvetica, sans-serif;
+  color: black;
+  text-decoration: none;
+}
+img {
+    padding: 20px;
+    max-width: 200px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+body {
+  text-align: center;
+  font-family: Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+     background-color: white
+   }
+
+   /* Set the background color of the result message based on whether it's correct or wrong */
+   #result {
+     background-color: #FFFFFF;
+   }
+   #result.correct {
+     background-color: #90EE90;
+   }
+   #result.wrong {
+     background-color: #FFC0CB;
+   }
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  margin-top: 0;
+}
+
+#fact-display {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+button {
+  font-size: 1.5rem;
+  padding: 10px 20px;
+  margin: 0 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#true-button {
+  background-color: #28a745;
+}
+
+#true-button:hover {
+  background-color: #1a682c;
+}
+
+#false-button {
+  background-color: #dc3545;
+}
+
+#false-button:hover {
+  background-color: #902023;
+}
+
+#result {
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 20px;
+  color: #007bff;
+  font-weight: bold;
+}
+</style>
+  <head>
+    <meta charset="utf-8">
+    <title>Fact or Cap</title>
+  </head>
+  <body>
+    <header>
+        <h1><img src="logo.png"></h1>
+    </header>
+    <main>
+      <div id="fact-display"></div>
+      <button id="true-button">True</button>
+      <button id="false-button">False</button>
+      <p id="result"></p>
+    </main>
+    <footer>
+      <p>&copy; 2023 <a href="https://github.com/therealnaail">therealnaail</a> </p>
+    </footer>
+    <script src="truefalse.js"></script>
+  </body>
+</html>
